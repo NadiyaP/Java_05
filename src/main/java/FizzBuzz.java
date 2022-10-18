@@ -7,12 +7,12 @@ public class FizzBuzz {
 
             int number = start;
 
-            for (int i = start; i < array.length && start <= end; i++) {
-                if (start % 15 == 0) {
+            for (int i = 0; i < array.length && start <= end; i++) {
+                if (number % 15 == 0) {
                     array[i] = "FizzBuzz";
-                } else if (start % 3 == 0) {
+                } else if (number % 3 == 0) {
                     array[i] = "Fizz";
-                } else if (start % 5 == 0) {
+                } else if (number % 5 == 0) {
                     array[i] = "Buzz";
 
                 } else {
@@ -24,6 +24,6 @@ public class FizzBuzz {
 
         }
 
-        return new String[0]; //
+        return new String[0];
     }
 }
